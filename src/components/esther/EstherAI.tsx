@@ -30,7 +30,7 @@ export function EstherAI({
   onAction,
   variant = "panel",
 }: EstherAIProps) {
-  const esther = useEstherAI({ context });
+  const esther = useEstherAI(context ? { context } : {});
   const state = controlledState ?? esther.state;
   const message = controlledMessage ?? esther.message;
   const config = estherStates[state];

@@ -13,10 +13,10 @@ export function EstherQuickActions({ disabled, onAction }: Props) {
         <motion.button
           key={action.id}
           type="button"
-          disabled={disabled}
+          disabled={disabled === true}
           onClick={() => onAction(action)}
-          whileHover={disabled ? undefined : { y: -3 }}
-          whileTap={disabled ? undefined : { scale: 0.97 }}
+          whileHover={disabled ? {} : { y: -3 }}
+          whileTap={disabled ? {} : { scale: 0.97 }}
           transition={{ duration: 0.2, ease: [0.22, 0.61, 0.36, 1] }}
           className="glass-panel group rounded-xl px-3 py-3 text-left text-sm font-medium text-foreground transition-colors hover:border-ring/60 disabled:cursor-not-allowed disabled:opacity-50"
         >
