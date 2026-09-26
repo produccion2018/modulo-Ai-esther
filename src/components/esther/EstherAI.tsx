@@ -6,6 +6,7 @@ import { EstherConversation } from "./EstherConversation";
 import { EstherGlow } from "./EstherGlow";
 import { EstherMessage } from "./EstherMessage";
 import { EstherParticles } from "./EstherParticles";
+import { EstherQuickActions as EstherQuickActionsBlock } from "./EstherQuickActions";
 import { estherStates, type EstherState } from "./esther-states";
 import { useEstherAI } from "./useEstherAI";
 
@@ -148,5 +149,3 @@ export function EstherAI({
     </section>
   );
 }
-
-import { EstherQuickActions as EstherQuickActionsBlock } from "./EstherQuickActions";
