@@ -98,7 +98,7 @@ export function EstherAI({
           {/* Esther as the visual protagonist */}
           <motion.div
             className="glass-panel relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-3xl p-5"
-            initial={{ opacity: 0, y: 18 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 0.61, 0.36, 1] }}
           >
@@ -120,7 +120,7 @@ export function EstherAI({
           {/* Conversation and actions */}
           <motion.div
             className="flex min-h-0 flex-col gap-5"
-            initial={{ opacity: 0, y: 18 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 0.61, 0.36, 1] }}
           >
